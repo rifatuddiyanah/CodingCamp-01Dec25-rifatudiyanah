@@ -1,0 +1,54 @@
+.logo{
+    height: 75px;
+    width: 75px;
+    background-color: grey;
+    border-radius: 50%;
+    background-image: url(https://picsum.photos/seed/picsum/200/300);
+    background-size: cover;
+}
+
+.main-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero {
+    height: 500px;
+    background-image: url("https://midtrans-website.al-mp-id-p.cdn.gtflabs.io/uploads/2022/12/65fb57e0c2cef67b3aed738c8cc46da3_cb43d76764d03dc0933ae3a75ceca024_compressed.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero-content {
+    background: rgba(0,0,0,0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+    text-align: center;
+}
+.portofolio {
+    padding: 40px;
+    text-align: center;
+}
+
+.portofolio-container {
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.portofolio img {
+    border-radius: 10px;
+    width: 300px;
+}
+
+.portofolio-container img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+

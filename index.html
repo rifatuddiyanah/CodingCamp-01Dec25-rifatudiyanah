@@ -6,17 +6,123 @@
     <title>Portofolio Rifatud Diyanah</title>
 
     <!--CSS External --->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!--Header Section-->
-    <header>   </header>
-
+    <header class="main-header p-[8px]">   
+        <!--Logo-->
+        <div class="logo"></div>
+        <nav>
+            <a class="border p-[4px]" href="#home-page">Home</a>
+            <a class="border p-[4px]" href="#our-profile-page">Profile</a>
+            <a class="border p-[4px]" href="#portofolio-page">Portofolio</a>
+            <a class="border p-[4px]" href="#message-us-page">Message Us</a>    
+        </nav>
+    </header>
+<hr />
     <!--Main Section-->
-    <main> </main>
+    <main> 
+        <!-- Home Page -->
+        <section id="home-page" class="hero">
+            <div class="hero-content">
+            <h2 id="welcome-speech">Selamat Datang di Website Kami</h2>
+            <p>Kami adalah PT Perwira Husada yang bergerak di bidang ekspor dan impor</p>
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="min-h-[500px] p-6">
+            <!--Photo Banner-->
+            <div class="w-full h-[220px] mb-6 overflow-hidden">
+            <img 
+                src="https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,f_auto,q_auto:best,w_640/v1634025439/01h8ek1cb8rfabx2erthgk5xac.jpg"
+                class="w-full h-full object-cover"
+                alt="Photo Banner">
+            </div>
+
+
+            <!--About Company-->
+            <div class ="text-center mb-6"> 
+                <h2 class="text-2xl font-bold">Our Company</h2>
+                <p class="mt-2">PT Perwira Husada adalah perusahaan yang bergerak di bidang ekspor dan impor.</p>
+            </div>
+
+            <!--Vision and Mission-->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="p-4 border rounded">
+                    <h3 class="text-xl font-bold mb-2">Vision</h3>
+                    <p>Menjadi perusahaan ekspor dan impor terkemuka di Indonesia yang mengutamakan kualitas dan kepuasan pelanggan.</p> 
+                </div>
+                <div class="p-4 border rounded">
+                    <h3 class="text-xl font-bold mb-2">Mission</h3>
+                    <ul class="list-disc list-inside">
+                        <li>Menyediakan produk ekspor dan impor berkualitas tinggi.</li>
+                        <li>Membangun hubungan jangka panjang dengan pelanggan dan mitra bisnis.</li>
+                        <li>Berinovasi dalam proses bisnis untuk meningkatkan efisiensi dan efektivitas.</li>
+                    </ul>
+                </div>
+            </div>      
+        </section>
+
+        <hr class=""mt-16">
+
+        <!-- Portofolio Page -->
+        <section id="portofolio-page" class="portofolio">
+            <h2 class="text-xl font-bold"> Our Portofolio</h2>
+            <p class="mt-2">Berikut ini adalah portofolio perusahaan kami:</p>
+            <div class="portofolio-container">
+                <img src="https://www.mayoraindah.co.id/assets/upload/full/mayorakemendag3-15339-b434c.jpg">
+                <img src="https://rmol.id/images/berita/normal/2017/02/986007_08461117022017_Industri-Pelayaran.jpg">
+                <img src="https://storage.googleapis.com/flip-prod-mktg-strapi/media-library/ekspor_adalah_4b17162477/ekspor_adalah_4b17162477.png">
+            </div>
+        </section>
+
+        <hr>
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold">Message Us</h2>
+                <p class="mt-2">Ada pertanyaan atau komentar? Kirimkan pesan Anda! Kami akan merespons secepatnya</p>
+                    
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Nama:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" name="name" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" name="email" required />
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Pesan:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" name="message" rows="5"
+                        required></textarea>
+                </div>
+            <button class="px-4 py-2 bg-blue-500 text-white rounded" type="button" onclick="validateForm()">Submit</button>
+            </form>
+            <div id="result" class="mt-6 p-4 border rounded bg-gray-50 hidden">
+                <h3 class="font-bold mb-2">Your Message:</h3>
+                <p id="result-name"></p>
+                <p id="result-email"></p>
+                <p id="result-message"></p>
+            </div>
+
+        </section>
+
+    </main>
 
     <!--Footer Section-->
-    <footer> </footer>
+    <footer> 
+        <p class="text-center p-4"> Rifatud Diyanah - 2025 </p>
+    </footer>
 
     <!--JS External--->
     <script src="js/script.js"></script>
